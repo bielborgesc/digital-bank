@@ -1,0 +1,44 @@
+;;; 
+Export: Release 21.0.0.0.0 - Production on Seg Mai 30 19:21:49 2022
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Conectado a: Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Iniciando "SYSTEM"."SYS_EXPORT_SCHEMA_01":  system/******** schemas=gabrielb directory=BANCARIO_DUMP dumpfile=bancarioschema.dmp logfile=bancarioschemas.log 
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/TABLE_DATA
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processando o tipo de objeto SCHEMA_EXPORT/STATISTICS/MARKER
+Processando o tipo de objeto SCHEMA_EXPORT/DEFAULT_ROLE
+Processando o tipo de objeto SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processando o tipo de objeto SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processando o tipo de objeto SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/TABLE
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/COMMENT
+Processando o tipo de objeto SCHEMA_EXPORT/FUNCTION/FUNCTION
+Processando o tipo de objeto SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processando o tipo de objeto SCHEMA_EXPORT/FUNCTION/ALTER_FUNCTION
+Processando o tipo de objeto SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processando o tipo de objeto SCHEMA_EXPORT/VIEW/VIEW
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processando o tipo de objeto SCHEMA_EXPORT/TABLE/TRIGGER
+Processando o tipo de objeto SCHEMA_EXPORT/MATERIALIZED_VIEW
+. . exportou "GABRIELB"."AGENCIA"                        7.945 KB      10 linhas
+. . exportou "GABRIELB"."BANCO"                          6.085 KB       5 linhas
+. . exportou "GABRIELB"."CONTEM"                         5.671 KB       6 linhas
+. . exportou "GABRIELB"."CUSTO_EM_GRATIFICACAO"              0 KB       0 linhas
+. . exportou "GABRIELB"."EVOLUCAO_SALARIO_FUNCIONARIO"       7 KB       1 linhas
+. . exportou "GABRIELB"."FUNCIONARIO"                    10.25 KB      26 linhas
+. . exportou "GABRIELB"."FUNCIONARIO_INSTITUCIONAL"      5.812 KB      12 linhas
+. . exportou "GABRIELB"."FUNCIONARIO_LOG"                6.039 KB       2 linhas
+. . exportou "GABRIELB"."FUNCIONARIO_TERCEIRIZADO"       6.882 KB      13 linhas
+. . exportou "GABRIELB"."SETOR"                          7.054 KB       4 linhas
+Tabela-mestre "SYSTEM"."SYS_EXPORT_SCHEMA_01" carregada/descarregada com sucesso
+******************************************************************************
+Conjunto de arquivos de dump para SYSTEM.SYS_EXPORT_SCHEMA_01 é:
+  C:\TEMP\DUMP\BANCARIOSCHEMA.DMP
+O job "SYSTEM"."SYS_EXPORT_SCHEMA_01" foi concluído com sucesso em Seg Mai 30 19:22:58 2022 elapsed 0 00:01:07

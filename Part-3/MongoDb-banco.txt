@@ -1,0 +1,67 @@
+>show dbs
+admin    40.00 KiB
+config  108.00 KiB
+local   112.00 KiB                                                                                                                                                 
+>db.banco.insertOne({
+	"cnpj": " 00.000.000/0001-91",
+	"nome": "Banco Do Brasil",
+	"data_fundacao":"12/10/1808"
+	});
+<{ acknowledged: true,
+  insertedId: ObjectId("62afbaf776891e1c8cacd850") }
+
+>db.banco.insertOne({
+	"cnpj": "60.746.948/0001-12",
+	"nome": "Bradesco",
+	"data_fundacao":"01/10/1943"
+	});
+<{ acknowledged: true,
+  insertedId: ObjectId("62afbb4076891e1c8cacd851") }
+
+>db.banco.insertOne({
+	"cnpj": "90.400.888/0001-42",
+	"nome": "Santander",
+	"data_fundacao":"12/02/1808"
+	});
+             
+<{ acknowledged: true,
+  insertedId: ObjectId("62afbb8176891e1c8cacd852") }
+                                                                                                                                                   
+>db.banco.updateOne({"cnpj": "90.400.888/0001-42"}, {$set: {
+	"cnpj": "90.400.888/0001-42",
+	"nome": "Nubank",
+	"data_fundacao":"10/10/2010"
+	}});
+
+<{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0 }
+                                                                                                  
+>db.banco.findOne();                                                                                                                                                  
+< { _id: ObjectId("62afbaf776891e1c8cacd850"),
+  cnpj: ' 00.000.000/0001-91',
+  nome: 'Banco Do Brasil',
+  data_fundacao: '12/10/1808' }
+                                                                                                                                                             
+> db.banco.find()                                                                                                                                                     
+<{ _id: ObjectId("62afbaf776891e1c8cacd850"),
+  cnpj: '00.000.000/0001-91',
+  nome: 'Banco Do Brasil',
+  data_fundacao: '12/10/1808' }
+{ _id: ObjectId("62afbb4076891e1c8cacd851"),
+  cnpj: '60.746.948/0001-12',
+  nome: 'Bradesco',
+  data_fundacao: '01/10/1943' }
+{ _id: ObjectId("62afbb8176891e1c8cacd852"),
+  cnpj: '90.400.888/0001-42',
+  nome: 'Santander',
+  data_fundacao: '12/02/1808' }
+
+                                                                                                                                                                      
+> db.banco.deleteOne({"cnpj": "60.746.948/0001-12"})                                                                                                                           
+<{ acknowledged: true, deletedCount: 1 }       
+                                                                                                                  
+> db.banco.deleteMany({"cnpj": {$in: ["90.400.888/0001-42", "00.000.000/0001-91"]}})     
+<{ acknowledged: true, deletedCount: 2 }                                                                                                                                                                                                                                                                                                                                                                                      
