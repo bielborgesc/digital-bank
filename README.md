@@ -8,7 +8,7 @@ This work done during my graduation had the main objective of learning how the O
 ## :computer: Development
 This development is composed of 3 parts:
 * [**Part** 1](https://github.com/bielborgesc/digital-bank/tree/main/Part-1) - The database modeling, along with the description of the main motivation behind this modeling. Below we can see an image that describes how the database modeling turned out:
-* [IMAGE]
+* ![Texto Alternativo](https://onedrive.live.com/?cid=9CF374F93ACC88EC&id=9CF374F93ACC88EC%21125562&parId=root&o=OneUp)
 * In this stage, we also have 3 different users: **System** (responsible for granting permissions to users), **gabrielb** (Responsible for creating the initial schema structure and performing the first population), and **user** (who has restricted permissions and can view the system's tables).
 * [**Part 2**](https://github.com/bielborgesc/digital-bank/tree/main/Part-2) In this stage, we have the logs and the dump file (binary with the objects and their structures) generated from Part 1.
 * [**Part 3**](https://github.com/bielborgesc/digital-bank/tree/main/Part-3) In this last stage, we see a little about **MongoDB** and its functioning by performing CRUD operations.
